@@ -15,6 +15,7 @@ async fn run() -> anyhow::Result<()> {
     // Create the sdl window
     let window = video
         .window("With love <3 - GetAGripGal", 1280, 720)
+        .metal_view()
         .position_centered()
         .resizable()
         .build()?;
